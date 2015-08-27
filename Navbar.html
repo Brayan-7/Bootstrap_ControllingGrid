@@ -1,0 +1,143 @@
+    <!DOCTYPE html>
+    <html xmlns="http://www.w3.org/1999/xhtml">
+      <head>
+        <meta charset="utf-8" />
+        <title>Example Navbar</title>
+        <link rel="stylesheet" href="Styles/bootstrap.min.css">
+        <style>
+          body {
+            padding-top: 70px;
+          }
+        </style>
+        <title>Navbar Sample</title>
+      </head>
+      <body>
+        <!--**************PART OF NAVBAR*********************-->
+            <nav class="navbar navbar-default navbar-fixed-top">
+             <div class="container-fluid">
+               <div class="navbar-header">
+                 <a href="/Index.html" class="navbar-brand">Navbar Example</a>
+                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#hamburger-navigation">
+                   <span class="sr-only">Navigation toggle</span>
+                   <span class="icon-bar"></span>
+                   <span class="icon-bar"></span>
+                   <span class="icon-bar"></span>
+                 </button>
+               </div>
+               <div class="collapse navbar-collapse" id="hamburger-navigation">
+                 <div class="navbar-text navbar-right">
+                   <a class="navbar-link" href="URL here">
+                     Follow us!
+                   </a>
+                 </div>
+                 <ul class="nav navbar-nav" role="menu">
+                   <li><a href="#" class="active">Current Page</a><span class="sr-only">current</span></li>
+                   <li><a href="#">Link</a></li>
+                   <li class="dropdown">
+                     <a class="dropdown-toggle" role="button" data-toggle="dropdown">Dropdown<span class="caret" /></a>
+                     <ul class="dropdown-menu">
+                       <li><a href="#">Option one</a></li>
+                       <li><a href="#">Option two</a></li>
+                     </ul>
+                   </li>
+                 </ul>
+               </div>
+             </div>
+           </nav>
+         <!--******************SECTION TAB****************************-->
+
+    <div class="container">
+      <center><h2>Contendio de las Pestañas</h2></center>
+      <!-- Tabs -->
+      <ul class="nav nav-tabs" role="tablist">
+        <li class="active"><a href="#tabs-first" role="tab" data-toggle="tab">Uno</a></li>
+        <li><a href="#tabs-second" role="tab" data-toggle="tab">Dos</a></li>
+        <li><a href="#tabs-third" role="tab" data-toggle="tab">Tres</a></li>
+      </ul>
+      <!-- Tab Content -->
+      <div class="tab-content">
+        <div class="active tab-pane fade in" id="tabs-first">
+          <h2>Pestaña Uno</h2>
+          <div>Contenido de la pestaña uno</div>
+        </div>
+        <div class="tab-pane fade" id="tabs-second">
+          <h2>Pestaña Dos</h2>
+          <div>Contenido de la pestaña dos</div>
+        </div>
+        <div class="tab-pane fade" id="tabs-third">
+          <h2>Pestaña tres</h2>
+          <div>Contendio de la pestaña tres</div>
+        </div>
+      </div>
+      <br/>
+      <h3>Aplicar un Acordeón </h3>
+       <!--*******************************CONTENT ACCORDION***************************************  -->
+      <div class="panel-group" id="accordion-sample">
+         <div class="panel panel-default">
+           <div class="panel-heading">
+             <h4 class="panel-title">
+               <a data-toggle="collapse" data-parent="#accordion-sample" href="#accordion-sample-one">
+                 Encabezado Uno
+               </a>
+             </h4>
+           </div>
+           <div id="accordion-sample-one" class="panel-collapse collapse in">
+             <div class="panel-body">
+               Contenido del encabezado uno
+             </div>
+           </div>
+         </div>
+         <div class="panel panel-default">
+           <div class="panel-heading">
+             <h4 class="panel-title">
+               <a data-toggle="collapse" data-parent="#accordion-sample" href="#accordion-sample-two">
+                 Encabezado Dos
+               </a>
+             </h4>
+           </div>
+         <div id="accordion-sample-two" class="panel-collapse collapse">
+           <div class="panel-body">
+             Contenido del encabezado dos
+           </div>
+         </div>
+      </div>
+      </div>
+
+      <!--**********************CONTENT CAROUSEL*********************************-->
+      <h3></h3>
+      <div class="row">
+        <div id="carousel-demo" class="carousel slide" data-ride="carousel">
+           <ol class="carousel-indicators">
+             <li data-target="#carousel-demo" data-slide-to="0" class="active"></li>
+             <li data-target="#carousel-demo" data-slide-to="1"></li>
+           </ol>
+           <div class="carousel-inner">
+             <div class="item active">
+               <img alt="First slide" src="Image/GK.jpg" />
+               <div class="carousel-caption">
+                 <h3>Son Goku</h3>
+                 <p>Caption Text about Goku and DBZ</p>
+               </div>
+             </div>
+             <div class="item">
+               <img alt="Second slide" src="Image/SG.jpg" />
+               <div class="carousel-caption">
+                 <h3>Selena Gomez</h3>
+                 <p>Caption Text about the new video of Selena Gomez</p>
+               </div>
+             </div>
+           </div>
+           <a class="left carousel-control" href="#carousel-demo" data-slide="prev">
+             <span class="glyphicon glyphicon-chevron-left"></span>
+           </a>
+           <a class="right carousel-control" href="#carousel-demo" data-slide="next">
+             <span class="glyphicon glyphicon-chevron-right"></span>
+           </a>
+        </div>
+      </div>
+    </div>
+       <!-- content -->
+        <script src='Scripts/jquery-2.1.4.min.js'></script>
+        <script src="Scripts/bootstrap.min.js"></script>
+      </body>
+    </html>
